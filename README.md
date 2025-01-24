@@ -1,2 +1,5 @@
 # cs145-rectangle
-Rectangle Class for CS145 Assignment #2
+maya's branch :333333
+
+## maya's checklist
+- [ ] write boilerplate for a test class that will take some user input.
