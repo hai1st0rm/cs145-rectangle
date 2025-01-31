@@ -1,5 +1,6 @@
 //Owen Smith - Lab 2
 // this is the "object" class of the program
+package lab2;
 public class Rectangle {
     public Rectangle(double x1, double y1, double x2, double y2, double x3, double y3, double x4, double y4){
         // constructor, making a rectangle object I think...
@@ -26,18 +27,20 @@ public class Rectangle {
         }
         
     }
-    private double[] getSidePairs(double x1, double y1, double x2, double y2, double x3, double y3, double x4, double y4){
-        // return an array with the sides paird up
-        // calculate distances between consecutive points - not sure if they have to be consecutive clockwise but I'm not 100% sure on how to do this otherwise...
-        double side2 = getSideDist(x2, y2, x3, y3);
-        double side3 = getSideDist(x3, y3, x4, y4);
-        double side4 = getSideDist(x4, y4, x1, y1);
+//    private double[] getSidePairs(double x1, double y1, double x2, double y2, double x3, double y3, double x4, double y4){
+//        // return an array with the sides paird up
+//        // calculate distances between consecutive points - not sure if they have to be consecutive clockwise but I'm not 100% sure on how to do this otherwise...
+//        double side2 = getSideDist(x2, y2, x3, y3);
+//        double side3 = getSideDist(x3, y3, x4, y4);
+//        double side4 = getSideDist(x4, y4, x1, y1);
+//
+//        // return the 4 side lengths in order
+//        //return new double[] {side1, side2, side3, side4};
+//        //temp!
+//        return new double[] {1.5, 2.5};
+//    }
 
-        // return the 4 side lengths in order
-        return new double[] {side1, side2, side3, side4};
-    }
-
-    private int getSideDist(double xa, double ya, double xb, double yb){
+    private double getSideDist(double xa, double ya, double xb, double yb){
         // get the distance of a side
         // Use the distance formula: √[(x2-x1)^2 + (y2-y1)^2]  (deepseek helped me with this implimentation, didn't know about the power method before this -_-)
         return Math.sqrt(Math.pow(xb - xa, 2) + Math.pow(yb - ya, 2));
@@ -49,6 +52,14 @@ public class Rectangle {
         if (side2 > largest) largest = side2;
         if (side3 > largest) largest = side3;
         if (side4 > largest) largest = side4;
+
+        return 1.5;
     }
-    public double getWidth(){}
+
+    public double getWidth(){
+        return 1.5;
+    }
+    public static void testMethod(){
+        System.out.println("Hello World!");
+    }
 }
